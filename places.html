@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Places</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9;color:#2c3e50;}
+header{background:#1e3a8a;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;}
+header h2{color:white;margin:0;}
+nav a{color:white;text-decoration:none;margin-left:20px;padding:8px 16px;border-radius:6px;font-weight:600;display:inline-block;transition:all 0.3s;}
+nav a:hover{background:white;color:#1e3a8a;transform:scale(1.1);}
+nav a.active{background:#facc15;color:#1e3a8a;}
+
+section{padding:40px;max-width:1000px;margin:auto;}
+.place{background:white;padding:20px;margin-bottom:40px;border-radius:8px;box-shadow:0 6px 15px rgba(0,0,0,0.1);display:flex;flex-wrap:wrap;align-items:center;}
+.place img{width:45%;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+.place .content{width:50%;padding:20px;}
+.place:nth-child(even){flex-direction:row-reverse;}
+.place h2{color:#1e3a8a;margin-bottom:10px;}
+.place p{line-height:1.6;font-size:16px;}
+footer{background:#1e3a8a;color:white;text-align:center;padding:15px;}
+@media(max-width:768px){
+    .place{flex-direction:column;}
+    .place .content, .place img{width:100%;padding:0; margin-bottom:20px;}
+}
+</style>
+</head>
+
+<body>
+<header>
+<h2>Explore Konaseema</h2>
+<nav>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="places.html" class="active">Places</a>
+<a href="festivals.html">Festivals</a>
+<a href="food.html">Food</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section>
+<!-- Ainavilli -->
+<div class="place">
+<div class="content">
+<h2>Ainavilli</h2>
+<p>Famous for the Sidhi Vinayaka Temple, Ainavilli attracts thousands of devotees every year. The village is also surrounded by lush coconut groves and rivers, giving it a serene atmosphere for tourists.</p>
+</div>
+<img src="ainavalli..jpeg" alt="Ainavilli Temple">
+</div>
+
+<!-- Antarvedi -->
+<div class="place">
+<div class="content">
+<h2>Antarvedi</h2>
+<p>A spiritual place where the Godavari River meets the Bay of Bengal. The Antarvedi Sri Lakshmi Narasimha Swamy Temple is a must-visit for pilgrims and tourists alike. Scenic backwaters make it perfect for photography.</p>
+</div>
+<img src="antarvedi.jpg" alt="Antarvedi Temple">
+</div>
+
+<!-- Appanapalli -->
+<div class="place">
+<div class="content">
+<h2>Appanapalli</h2>
+<p>Popular during Sankranti and other local festivals, Appanapalli showcases traditional village life and temple culture. Visitors can enjoy local cuisine and the colorful festive celebrations.</p>
+</div>
+<img src="appanapalli...jpeg" alt="Appanapalli Temple">
+</div>
+
+<!-- Draksharamam -->
+<div class="place">
+<div class="content">
+<h2>Draksharamam</h2>
+<p>Home to one of the Pancharama Kshetras, the Bhimeswara Swamy Temple in Draksharamam is an architectural marvel. Pilgrims visit here for its spiritual significance and beautiful temple carvings.</p>
+</div>
+<img src="draksharamam.jpeg" alt="Draksharamam Temple">
+</div>
+
+<!-- Uppada Beach -->
+<div class="place">
+<div class="content">
+<h2>Uppada Beach</h2>
+<p>A serene beach famous for its scenic beauty and Uppada Jamdani Sarees. Perfect for nature lovers and photographers, this location offers calm waters and breathtaking sunsets.</p>
+</div>
+<img src="uppadabeach.jpeg" alt="Uppada Beach">
+</div>
+
+</section>
+
+<footer>© 2026 Explore Konaseema</footer>
+</body>
+</html>

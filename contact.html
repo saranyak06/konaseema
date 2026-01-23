@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us – Explore Konaseema</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f4f6f9;
+            color:#2c3e50;
+        }
+
+        /* HEADER */
+        header{
+            background:#1e3a8a;
+            height:70px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:0 40px;
+        }
+
+        header h2{
+            color:white;
+            margin:0;
+        }
+
+        /* NAVIGATION */
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            padding:8px 16px;
+            border-radius:6px;
+            font-weight:600;
+            display:inline-block;
+            transition:all 0.3s ease;
+        }
+
+        /* HOVER EFFECT (ZOOM + COLOR) */
+        nav a:hover{
+            background:white;
+            color:#1e3a8a;
+            transform:scale(1.1);
+        }
+
+        /* ACTIVE PAGE */
+        nav a.active{
+            background:#facc15;
+            color:#1e3a8a;
+        }
+
+        /* CONTENT */
+        section{
+            padding:40px;
+            max-width:900px;
+            margin:auto;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:8px;
+            box-shadow:0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            color:#1e3a8a;
+        }
+
+        /* FORM */
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+            margin-bottom:20px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:14px;
+        }
+
+        button{
+            background:#1e3a8a;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:6px;
+            font-size:16px;
+            cursor:pointer;
+            transition:background 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover{
+            background:#facc15;
+            color:#1e3a8a;
+            transform:scale(1.05);
+        }
+
+        /* FOOTER */
+        footer{
+            background:#1e3a8a;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Explore Konaseema</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="places.html">Places</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="food.html">Food</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <div class="card">
+        <h1>Contact Us</h1>
+        <p>If you want to know more about Konaseema tourism, festivals, or culture, feel free to contact us.</p>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Explore Konaseema | Designed for Academic Project
+</footer>
+
+</body>
+</html>

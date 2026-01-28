@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Festivals – Explore Konaseema</title>
 
     <style>
@@ -38,14 +39,12 @@
             transition:all 0.3s ease;
         }
 
-        /* HOVER EFFECT */
         nav a:hover{
             background:white;
             color:#1e3a8a;
             transform:scale(1.1);
         }
 
-        /* ACTIVE PAGE */
         nav a.active{
             background:#facc15;
             color:#1e3a8a;
@@ -61,26 +60,31 @@
         h1{
             color:#1e3a8a;
             text-align:center;
-            margin-bottom:30px;
+            margin-bottom:40px;
         }
 
+        /* FESTIVAL CARD */
         .festival{
             background:white;
             padding:25px;
-            margin-bottom:25px;
-            border-radius:8px;
+            margin-bottom:30px;
+            border-radius:10px;
             box-shadow:0 6px 15px rgba(0,0,0,0.1);
-        }
-
-        .festival h2{
-            color:#1e3a8a;
+            display:flex;
+            gap:30px;
+            align-items:center;
         }
 
         .festival img{
-            width:100%;
-            max-width:700px;
-            border-radius:8px;
-            margin-top:15px;
+            width:350px;
+            height:auto;
+            border-radius:10px;
+            flex-shrink:0;
+        }
+
+        .festival-content h2{
+            color:#1e3a8a;
+            margin-top:0;
         }
 
         /* FOOTER */
@@ -91,15 +95,18 @@
             padding:15px;
             margin-top:40px;
         }
-       image{
-    width:45%;
-    text-align:right;
-}
-.image img{
-    width:100%;
-    max-width:350px;
-    border-radius:10px;
-}
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .festival{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .festival img{
+                width:100%;
+            }
+        }
     </style>
 </head>
 
@@ -121,64 +128,64 @@
     <h1>Festivals of Konaseema</h1>
 
     <div class="festival">
-        <div class="img">
-        <h2>Sankranti</h2>
-        <p>
-            Sankranti is the most important harvest festival of Konaseema. 
-            People decorate their homes with rangoli, enjoy traditional foods, 
-            and visit famous places like Ainavilli, Antharvedi, Bhimavaram Kodipandhalu,
-            Jaganathota Prabhala Theertham, and nearby beach festivals.
-        </p>
-        <img src="prabha.jfif" alt="Sankranti Festival" width="500px" height="500px">
-    </div>
-    </div>
-
-    <div class="festival">
-        <div class="img">
-        <h2>Ugadi</h2>
-        <p>
-            Ugadi marks the Telugu New Year. The special Ugadi Pachadi is prepared
-            with six ingredients representing nine types of life tastes such as
-            happiness, sadness, anger, fear, surprise, and hope.
-        </p>
-        <img src="ugadhi.JPG" alt="Ugadi Festival" width="500px" height="500px">
-    </div>
-    </div>
-
-
-    <div class="festival">
-        <div class="img">
-        <h2>Ganesh Chaturthi</h2>
-        <p>
-            Ganesh Chaturthi is celebrated for nine days with devotion.
-            Beautiful idols of Lord Ganesha are installed, prayers are performed,
-            and cultural programs are organized across Konaseema.
-        </p>
-        <img src="chaturthi.avif" alt="Ganesh Chaturthi" width="500px" height="500px">
-    </div>
+        <img src="prabha.jfif" alt="Sankranti Festival">
+        <div class="festival-content">
+            <h2>Sankranti</h2>
+            <p>
+                Sankranti is the most important harvest festival of Konaseema.
+                People decorate their homes with rangoli, enjoy traditional foods,
+                and visit Ainavilli, Antharvedi, Bhimavaram Kodipandhalu,
+                Jaganathota Prabhala Theertham, and nearby beach festivals.
+            </p>
+        </div>
     </div>
 
     <div class="festival">
-        <h2>Devi Navaratri</h2>
-        <div class="img">
-        <p>
-            Devi Navaratri is celebrated for twelve nights in Konaseema.
-            Devotees worship Goddess Durga in different forms and participate
-            in spiritual and cultural activities.
-        </p>
-        <img src="navaratri.jfif" alt="Navaratri Festival" width="500px" height="500px">
+        <img src="ugadhi.JPG" alt="Ugadi Festival">
+        <div class="festival-content">
+            <h2>Ugadi</h2>
+            <p>
+                Ugadi marks the Telugu New Year. The special Ugadi Pachadi is prepared
+                using six ingredients that represent different emotions of life
+                such as happiness, sorrow, anger, fear, surprise, and hope.
+            </p>
+        </div>
     </div>
-    </div>
+
     <div class="festival">
-        <div class="img">
-        <h2>Diwali</h2>
-        <p>
-            Diwali, the festival of lights, celebrates the victory of good over evil.
-            It is associated with the return of Lord Rama to Ayodhya.
-            Homes are decorated with lamps, and fireworks light up the sky.
-        </p>
-        <img src="diwali..webp" alt="Diwali Festival" width="500px" height="500px">
+        <img src="chaturthi.avif" alt="Ganesh Chaturthi Festival">
+        <div class="festival-content">
+            <h2>Ganesh Chaturthi</h2>
+            <p>
+                Ganesh Chaturthi is celebrated for nine days with devotion.
+                Beautiful idols of Lord Ganesha are installed, prayers are offered,
+                and cultural programs are organized across Konaseema.
+            </p>
+        </div>
     </div>
+
+    <div class="festival">
+        <img src="navaratri.jfif" alt="Navaratri Festival">
+        <div class="festival-content">
+            <h2>Devi Navaratri</h2>
+            <p>
+                Devi Navaratri is celebrated for twelve nights in Konaseema.
+                Devotees worship Goddess Durga in various forms and participate
+                in spiritual, religious, and cultural activities.
+            </p>
+        </div>
+    </div>
+
+    <div class="festival">
+        <img src="diwali..webp" alt="Diwali Festival">
+        <div class="festival-content">
+            <h2>Diwali</h2>
+            <p>
+                Diwali, the festival of lights, symbolizes the victory of good over evil.
+                Homes are decorated with lamps, sweets are shared,
+                and fireworks light up the celebrations across the region.
+            </p>
+        </div>
     </div>
 
 </section>
